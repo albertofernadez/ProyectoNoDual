@@ -14,7 +14,9 @@ a,
 button {
   font-family: "Quicksand", sans-serif;
 }
-
+body{
+  background-color: green;
+}
 h1,
 h2,
 h3,
@@ -339,15 +341,10 @@ section#galeria div figure picture img {
      object-fit: cover;
 }
 section#galeria div figure:hover {
-  background-color: lightblue;
+  background-color: white;
   padding: 0;
 }
-section#galeria div figure:nth-child(2n-1):hover {
-  transform: rotate(-5deg);
-}
-section#galeria div figure:nth-child(2n):hover {
-  transform: rotate(3deg);
-}
+
 
 main section:not([id]) {
   padding: 2rem 10rem;
