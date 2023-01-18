@@ -28,6 +28,15 @@ h4 {
   box-sizing: border-box;
 }
 
+.nombre h3{
+  background-color: lawngreen
+}
+.nombre2 h3{
+  background-color: orange;
+}
+.nombre3 h3{
+  background-color: red;
+}
 
 /*---------------------------------------
  FOOTER              
