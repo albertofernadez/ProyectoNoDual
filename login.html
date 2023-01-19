@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="static/css/normalize.css">
+    <link rel="stylesheet" href="css/login.css">
 
     <title>Document</title>
 </head>
@@ -40,6 +41,39 @@
             </ul>
         </nav>
     </header>
+
+
+    <h2>Iniciar Sesión</h2>
+
+    <form action="/action_page.php" method="post">
+      <div class="container">
+        <label for="uname"><b>Nombre</b></label>
+        <input type="text" placeholder="Introduzca su Nombre" name="uname" required>
+
+        <label for="ape"><b>Apellidos</b></label>
+        <input type="text" placeholder="Introduzca sus apellidos" name="ape" required>
+
+        <label for="psw"><b>Contraseña</b></label>
+        <input type="password" placeholder="Introduzca la contraseña" name="psw" required>
+            
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" class="cancelbtn"><a href="index.html">Cancelar</a></button>
+        <span class="psw">¿Ha olvidado su <a href="#">contraseña?</a></span>
+      </div>
+    </form>
+
+
+
+
+
+
+
+    
 
     
 </body>
