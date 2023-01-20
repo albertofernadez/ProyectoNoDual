@@ -16,13 +16,17 @@ button {
 }
 
 body{
-  background-color: green;
+  background-image: url(https://fondosmil.com/fondo/6615.jpg);
 }
 h1,
 h2,
 h3,
 h4 {
   font-family: "Fredoka One", cursive;
+}
+
+img{
+  border: 5px solid black;
 }
 
 * {
@@ -43,7 +47,7 @@ h4 {
  FOOTER              
 -----------------------------------------*/
 footer {
-  background: #252020;
+  background: rgb(2, 49, 0);
   padding: 40px 0;
   }
   #footer{
@@ -96,7 +100,6 @@ main {
 }
 
 nav.menu {
-  background-color: black;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
@@ -154,9 +157,9 @@ nav.menu a:not(:has(img)) {
   color: white;
   transition: all 1s;
 }
+
 nav.menu a:not(:has(img)):hover {
-  background-color: white;
-  color: red;
+  color: lawngreen;
 }
 
 aside.menu-offcanvas {
@@ -281,13 +284,9 @@ section#hero div {
   background-color: rgba(0, 0, 0, 0.3725490196);
   height: calc(100vh - 5rem);
   padding: 0;
-  -webkit-backdrop-filter: blur(3px);
-          backdrop-filter: blur(3px);
+
 }
-section#hero div.fondo {
-  background-image: url("../img/fantasy.jpg");
-  z-index: -1;
-}
+
 section#hero div.fondo video {
   width: 100%;
   height: 100%;
