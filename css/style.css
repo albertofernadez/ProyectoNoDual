@@ -41,7 +41,29 @@ img{
 .nombre3 h3{
   background-color: red;
 }
-
+section#sobrenosotros {
+  text-align: center;
+  padding: min(3rem, 30px);
+  min-height: 100vh;
+}
+section#sobrenosotros div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+section#sobrenosotros div figure {
+  width: 300px;
+  max-width: 300px;
+  transition: all 0.3s;
+  padding: 20px;
+}
+section#sobrenosotros div figure picture img {
+  max-width: 100%;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 /*---------------------------------------
  FOOTER              
 -----------------------------------------*/
