@@ -1,69 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/login.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/login.css">
 
-    <title>Document</title>
+  <title>Document</title>
 </head>
+
 <body>
+  <div>
     <ul>
-        <li>
-            <a href="index.html">Noticias</a>
-        </li>
-        <li>
-            <a href="aboutus.html">Sobre Nosotros</a>
-        </li>
-        <li> <a href="adoptar.html">Adoptar</a>
-        </li>
-        <li>
-            <a href="perdidas.html">Mascotas Perdidas</a>
-        </li>
-        <li>
-            <a href="dar.html">Dar En Adopción</a>
-        </li>
-        <li style="float:right">
-            <a href="login.html">Iniciar Sesión</a>
-        </li>
+      <li>
+        <a href="index.html">Noticias</a>
+      </li>
+      <li>
+        <a href="aboutus.html">Sobre Nosotros</a>
+      </li>
+      <li> <a href="adoptar.html">Adoptar</a>
+      </li>
+      <li>
+        <a href="perdidas1.html">Mascotas Perdidas</a>
+      </li>
+      <li>
+        <a href="dar.html">Dar En Adopción</a>
+      </li>
+      <li style="float:right">
+        <a href="login.html">Iniciar Sesión</a>
+      </li>
     </ul>
+  </div>
+  <h2>Iniciar Sesión</h2>
 
+  <form action="/action_page.php" method="post">
+    <div class="container">
+      <label for="uname"><b>Nombre</b></label>
+      <input type="text" placeholder="Introduzca su Nombre" name="uname" required>
 
-    <h2>Iniciar Sesión</h2>
+      <label for="ape"><b>Apellidos</b></label>
+      <input type="text" placeholder="Introduzca sus apellidos" name="ape" required>
 
-    <form action="/action_page.php" method="post">
-      <div class="container">
-        <label for="uname"><b>Nombre</b></label>
-        <input type="text" placeholder="Introduzca su Nombre" name="uname" required>
+      <label for="psw"><b>Contraseña</b></label>
+      <input type="password" placeholder="Introduzca la contraseña" name="psw" required>
 
-        <label for="ape"><b>Apellidos</b></label>
-        <input type="text" placeholder="Introduzca sus apellidos" name="ape" required>
-
-        <label for="psw"><b>Contraseña</b></label>
-        <input type="password" placeholder="Introduzca la contraseña" name="psw" required>
-            
-        <button type="submit">Entrar</button>
-        <label>
-          <input type="checkbox" checked="checked" name="remember"> Recuerdame
-        </label>
-      </div>
-      <div class="container">
-        <button type="button" class="cancelbtn"><a href="index.html">Cancelar</a></button>
-        <span class="psw">¿Ha olvidado su <a href="#">contraseña?</a></span>
-      </div>
-    </form>
-
-
+      <button type="submit">Entrar</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Recuerdame
+      </label>
+    </div>
+    <div class="container">
+      <button type="button" class="cancelbtn"><a href="index.html">Cancelar</a></button>
+      <span class="psw">¿Ha olvidado su <a href="#">contraseña?</a></span>
+    </div>
+  </form>
 
 
 
 
 
-    
 
-    
+
+
+
+
 </body>
 
 </html>

@@ -2,18 +2,20 @@ section#hero div.fondo video {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: center center;
-     object-position: center center;
+  object-position: center center;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@300&display=swap");
+
 body,
 p,
 a,
 button {
   font-family: "Quicksand", sans-serif;
 }
+
 button {
   background-color: #2a9b46;
   border: 0;
@@ -24,8 +26,10 @@ button {
   padding: 10px 25px;
 }
 
-table, th, td {
-  border:1px solid black;
+table,
+th,
+td {
+  border: 1px solid black;
   text-align: center;
 }
 
@@ -36,7 +40,7 @@ table, th, td {
   justify-content: center;
   position: fixed;
   pointer-events: none;
-  opacity: 0;  
+  opacity: 0;
   top: 0;
   left: 0;
   height: 100vh;
@@ -67,16 +71,17 @@ table, th, td {
   opacity: 0.7;
   font-size: 14px;
 }
-a{
+
+a {
   text-decoration: none;
   color: black;
 }
 
 
-body{
-  background-image: linear-gradient(120deg,#96e6a1  0%,  #d4fc79 100%);
+body {
+  background-image: linear-gradient(120deg, #96e6a1 0%, #d4fc79 100%);
 }
-  
+
 h1,
 h2,
 h3,
@@ -84,7 +89,7 @@ h4 {
   font-family: "Fredoka One", cursive;
 }
 
-img{
+img {
   border: 5px solid black;
 }
 
@@ -92,86 +97,106 @@ img{
   box-sizing: border-box;
 }
 
-.nombre h3{
+.nombre h3 {
   background-color: lawngreen
 }
-.nombre2 h3{
+
+.nombre2 h3 {
   background-color: orange;
 }
-.nombre3 h3{
+
+.nombre3 h3 {
   background-color: red;
 }
+
 section#sobrenosotros {
   text-align: center;
   padding: min(3rem, 30px);
   min-height: 100vh;
 }
+
 section#sobrenosotros div {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 section#sobrenosotros div figure {
   width: 300px;
   max-width: 300px;
   transition: all 0.3s;
   padding: 20px;
 }
+
 section#sobrenosotros div figure picture img {
   max-width: 100%;
   height: 200px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
+
 /*---------------------------------------
  FOOTER              
 -----------------------------------------*/
 footer {
   background: rgb(2, 49, 0);
   padding: 40px 0;
-  }
-  #footer{
-    text-align: center;
-  }
-  footer .section-title {
+}
+
+#footer {
+  text-align: center;
+}
+
+footer .section-title {
   padding-bottom: 10px;
-  }
-  footer h2 {
+}
+
+footer h2 {
   font-size: 20px;
-  }
-  footer a,
-  footer p {
+}
+
+footer a,
+footer p {
   color: #909090;
-  }
-  footer strong {
+}
+
+footer strong {
   color: #d9d9d9;
-  }
-  footer address p {
+}
+
+footer address p {
   margin-bottom: 0;
-  }
-  footer .social-icon {
+}
+
+footer .social-icon {
   margin-top: 25px;
-  }
-  .footer-info {
+}
+
+.footer-info {
   margin-right: 2em;
-  }
-  .footer-info h2 {
+}
+
+.footer-info h2 {
   color: #ffffff;
   padding: 0;
-  }
-  .footer_menu h2 {
+}
+
+.footer_menu h2 {
   margin-top: 2em;
-  }
-  .footer_menu ul {
+}
+
+.footer_menu ul {
   margin: 0;
   padding: 0;
-  }
-  .footer_menu li {
+}
+
+.footer_menu li {
   display: inline-block;
   list-style: none;
   margin: 5px 10px 5px 0;
-  }
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -179,6 +204,7 @@ html {
 main {
   position: relative;
 }
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -208,24 +234,28 @@ section#galeria {
   padding: min(3rem, 30px);
   min-height: 100vh;
 }
+
 section#galeria div {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 section#galeria div figure {
   width: 300px;
   max-width: 300px;
   transition: all 0.3s;
   padding: 20px;
 }
+
 section#galeria div figure picture img {
   max-width: 100%;
   height: 200px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
+
 section#galeria div figure:hover {
   background-color: white;
   padding: 0;
