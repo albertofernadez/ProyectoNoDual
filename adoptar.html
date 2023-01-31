@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
 
     <title>Document</title>
 </head>
+
 <body>
     <header>
         <nav class="menu">
@@ -43,53 +45,131 @@
         <form action="/adoptar.html">
             <label for="mascotas">Filtras por:</label>
             <select id="mascotas" name="mascotas">
-              <option value="perros">Perros</option>
-              <option value="gatos">Gatos</option>
-              <option value="pajaros">Pajaros</option>
+                <option value="perros">Perros</option>
+                <option value="gatos">Gatos</option>
+                <option value="pajaros">Pajaros</option>
             </select>
-          </form>
-          <br>
+        </form>
+        <br>
         <div>
             <figure>
                 <picture>
-                    <source srcset="https://www.diariodesevilla.es/2022/05/11/mascotas/Border-Collie-perro-favorito-Espana_1682542520_158056552_667x375.jpg" media="(min-width: 1200px)">
-                    <source srcset="https://www.diariodesevilla.es/2022/05/11/mascotas/Border-Collie-perro-favorito-Espana_1682542520_158056552_667x375.jpg" media="(min-width: 800px)">
-                    <img src="https://www.diariodesevilla.es/2022/05/11/mascotas/Border-Collie-perro-favorito-Espana_1682542520_158056552_667x375.jpg" alt="">
+                    <img src="img/adoptar1.png" alt="">
                 </picture>
-                <figcaption><h2>Laila</h2></figcaption>
+                <figcaption>
+                    <h2>Laila</h2>
+                </figcaption>
                 <div class="nombre">
                     <h3>Disponible</h3>
                 </div>
-                <a href="#" class="cta">Ver ficha</a>
-                
+                <button id="open">Ver ficha</button>
+
+                    <div id="modal_container" class="modal-container">
+                        <div class="modal">
+                            <h2>Datos de la mascota</h2>
+                            <img src="/img/adoptar1.png" alt="" width="200" height="150">
+                            <br>
+                            <table style="width:100%">
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Raza</th>
+                                    <th>Chip</th>
+                                </tr>
+                                <tr>
+                                    <td>Laila</td>
+                                    <td>Pastor Alemán</td>
+                                    <td>Si</td>
+                                </tr>
+
+                            </table>
+                            <br>
+                            <button id="close">Cerrar</button>
+                        </div>
+                    </div>
+                </figcaption>
+
             </figure>
+
             <figure>
                 <picture>
                     <img src="img/adoptar2.png" alt="">
                 </picture>
-                <figcaption><h2>Nieve</h2></figcaption>
+                <figcaption>
+                    <h2>Nieve</h2>
+                </figcaption>
                 <div class="nombre2">
                     <h3>Tramitando</h3>
                 </div>
-                <a href="#" class="cta">Ver ficha</a>
+                <button id="open">Ver ficha</button>
+
+                <div id="modal_container" class="modal-container">
+                    <div class="modal">
+                        <h2>Datos de la mascota</h2>
+                        <img src="/img/adoptar2.png" alt="" width="200" height="150">
+                        <br>
+                        <table style="width:100%">
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Raza</th>
+                                <th>Chip</th>
+                            </tr>
+                            <tr>
+                                <td>Nieve</td>
+                                <td>Husky</td>
+                                <td>Si</td>
+                            </tr>
+
+                        </table>
+                        <br>
+                        <button id="close">Cerrar</button>
+                    </div>
+                </div>
+
 
             </figure>
             <figure>
                 <picture>
                     <img src="img/adoptar3.png" alt="">
                 </picture>
-                <figcaption><h2>Kati</h2></figcaption>
+                <figcaption>
+                    <h2>Kati</h2>
+                </figcaption>
                 <div class="nombre3">
                     <h3>Urgente</h3>
                 </div>
-                <a href="#" class="cta">Ver ficha</a>
+                <button id="open">Ver ficha</button>
+
+                <div id="modal_container" class="modal-container">
+                    <div class="modal">
+                        <h2>Datos de la mascota</h2>
+                        <img src="/img/adoptar3.png" alt="" width="200" height="150">
+                        <br>
+                        <table style="width:100%">
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Raza</th>
+                                <th>Chip</th>
+                            </tr>
+                            <tr>
+                                <td>Kati</td>
+                                <td>Mezclada</td>
+                                <td>Si</td>
+                            </tr>
+
+                        </table>
+                        <br>
+                        <button id="close">Cerrar</button>
+                    </div>
+                </div>
 
             </figure>
-                              
+
         </div>
 
     </section>
-    
+
+
+
 </body>
 <footer id="footer">
     <div class="container">
@@ -104,7 +184,7 @@
                         <p>Pl. Virgen Milagrosa, 11, 29017 Málaga</p>
                     </address>
 
-                   
+
                     <div class="copyright-text">
                         <p>Copyright &copy; 2023 iPed</p>
                     </div>
@@ -127,4 +207,6 @@
         </div>
     </div>
 </footer>
+<script src="modal.js"></script>
+
 </html>
