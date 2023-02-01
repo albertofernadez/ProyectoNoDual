@@ -78,16 +78,14 @@ li a:hover {
 }
 
 h1 {
-  padding-top: 2vh;
-  padding-left: 35vh;
-  padding-right: 25vh;
-  padding-bottom: 30px;
+  padding-top: 10vh;
+  text-align: center;
+  padding-bottom: 10vh;
 }
 
 body {
   display: flex;
   min-height: 100vh;
-  align-items: center;
   justify-content: center;
   background: #f2f2f2;  /*Fondo de arriba del body*/
   position: relative;
@@ -109,10 +107,8 @@ body::before {
 }
 
 .container {
-  max-width: 950px;
   width: 100%;
   overflow: hidden;
-  padding: 80px 0;
 }
 
 .container .main-card {
