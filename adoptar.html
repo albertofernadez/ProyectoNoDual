@@ -8,6 +8,40 @@
     <link rel="stylesheet" href="css/style.css">
 
     <title>Document</title>
+
+    <script>
+        var mascotas = []
+        mascotas.push({
+            nombre: "Nieve",
+            raza: "Husky",
+            chip: "si",
+            imagen: "img/adoptar1.png"
+        })
+        mascotas.push({
+            nombre: "Coco",
+            raza: "Pitbull",
+            chip: "si",
+            imagen: "img/adoptar2.png"
+        })
+        mascotas.push({
+            nombre: "Fergy",
+            raza: "Chihuahua",
+            chip: "no",
+            imagen: "img/adoptar3.png"
+        })
+        mascotas.push({
+            nombre: "Coco",
+            raza: "Pitbull",
+            chip: "si",
+            imagen: "img/adoptar2.png"
+        })
+        mascotas.push({
+            nombre: "Fergy",
+            raza: "Chihuahua",
+            chip: "no",
+            imagen: "img/adoptar3.png"
+        })
+    </script>
 </head>
 
 <body>
@@ -30,6 +64,7 @@
             <a href="login.html">Iniciar Sesión</a>
         </li>
     </ul>
+
     <section id="galeria">
         <h2>Mascotas en Adopción</h2>
         <br>
@@ -42,162 +77,79 @@
             </select>
         </form>
         <br>
-        <div>
-            <figure>
-                <picture>
-                    <img src="img/adoptar1.png" alt="">
-                </picture>
-                <figcaption>
-                    <h2>Laila</h2>
-                </figcaption>
-                <div class="nombre">
-                    <h3>Disponible</h3>
-                </div>
-                <button id="open">Ver ficha</button>
+        <div class="mascotas">
+            <template>
+                <figure>
+                    <picture>
+                        <img src="img/adoptar1.png" alt="">
+                    </picture>
+                    <figcaption>
+                        <h2>Laila</h2>
+                    </figcaption>
+                    
+                    <button class="open">Ver ficha</button>
 
-                    <div id="modal_container" class="modal-container">
-                        <div class="modal">
-                            <h2>Datos de la mascota</h2>
-                            <img src="/img/adoptar1.png" alt="" width="200" height="150">
-                            <br>
-                            <table style="width:100%">
-                                <tr>
-                                    <th>Nombre</th>
-                                    <th>Raza</th>
-                                    <th>Chip</th>
-                                </tr>
-                                <tr>
-                                    <td>Laila</td>
-                                    <td>Pastor Alemán</td>
-                                    <td>Si</td>
-                                </tr>
-
-                            </table>
-                            <br>
-                            <button id="close">Cerrar</button>
-                        </div>
-                    </div>
-                </figcaption>
-
-            </figure>
-
-            <figure>
-                <picture>
-                    <img src="img/adoptar2.png" alt="">
-                </picture>
-                <figcaption>
-                    <h2>Nieve</h2>
-                </figcaption>
-                <div class="nombre2">
-                    <h3>Tramitando</h3>
-                </div>
-                <button id="open">Ver ficha</button>
-
-                <div id="modal_container" class="modal-container">
-                    <div class="modal">
-                        <h2>Datos de la mascota</h2>
-                        <img src="/img/adoptar2.png" alt="" width="200" height="150">
-                        <br>
-                        <table style="width:100%">
-                            <tr>
-                                <th>Nombre</th>
-                                <th>Raza</th>
-                                <th>Chip</th>
-                            </tr>
-                            <tr>
-                                <td>Nieve</td>
-                                <td>Husky</td>
-                                <td>Si</td>
-                            </tr>
-
-                        </table>
-                        <br>
-                        <button id="close">Cerrar</button>
-                    </div>
-                </div>
-
-
-            </figure>
-            <figure>
-                <picture>
-                    <img src="img/adoptar3.png" alt="">
-                </picture>
-                <figcaption>
-                    <h2>Kati</h2>
-                </figcaption>
-                <div class="nombre3">
-                    <h3>Urgente</h3>
-                </div>
-                <button id="open">Ver ficha</button>
-
-                <div id="modal_container" class="modal-container">
-                    <div class="modal">
-                        <h2>Datos de la mascota</h2>
-                        <img src="/img/adoptar3.png" alt="" width="200" height="150">
-                        <br>
-                        <table style="width:100%">
-                            <tr>
-                                <th>Nombre</th>
-                                <th>Raza</th>
-                                <th>Chip</th>
-                            </tr>
-                            <tr>
-                                <td>Kati</td>
-                                <td>Mezclada</td>
-                                <td>Si</td>
-                            </tr>
-
-                        </table>
-                        <br>
-                        <button id="close">Cerrar</button>
-                    </div>
-                </div>
-
-            </figure>
-
+                </figure>
+            </template>
         </div>
 
     </section>
 
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 col-sm-6">
+                    <div class="footer-info">
+                        <div class="section-title">
+                            <h2>¿Dónde nos encontramos?</h2>
+                        </div>
+                        <address>
+                            <p>Pl. Virgen Milagrosa, 11, 29017 Málaga</p>
+                        </address>
 
 
-</body>
-<footer id="footer">
-    <div class="container">
-        <div class="row">
-
-            <div class="col-md-4 col-sm-6">
-                <div class="footer-info">
-                    <div class="section-title">
-                        <h2>¿Dónde nos encontramos?</h2>
-                    </div>
-                    <address>
-                        <p>Pl. Virgen Milagrosa, 11, 29017 Málaga</p>
-                    </address>
-
-
-                    <div class="copyright-text">
-                        <p>Copyright &copy; 2023 iPed</p>
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2023 iPed</p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-md-4 col-sm-6">
-                <div class="footer-info">
-                    <div class="section-title">
-                        <h2>Información de contacto</h2>
+                <div class="col-md-4 col-sm-6">
+                    <div class="footer-info">
+                        <div class="section-title">
+                            <h2>Información de contacto</h2>
+                        </div>
+                        <address>
+                            <p>+34 671 39 78 87</p>
+                            <p><a href="mailto:contacto@iped.com">contacto@iped.com</a></p>
+                        </address>
                     </div>
-                    <address>
-                        <p>+34 671 39 78 87</p>
-                        <p><a href="mailto:contacto@iped.com">contacto@iped.com</a></p>
-                    </address>
                 </div>
+
+
             </div>
+        </div>
+    </footer>
 
 
+    <div id="modal_container" class="modal-container">
+        <div class="modal">
+            <h2 id="nombre">Datos de la mascota<br>
+            </h2>
+            <p class="raza"></p>
+            <img id="imagen" src="/img/adoptar1.png" alt="" width="200" height="150">
+            <br>
+            <br>
+            <span id="chip"></span>
+            <br>
+            <button id="close">Cerrar</button>
         </div>
     </div>
-</footer>
-<script src="modal.js"></script>
+
+
+    <script src="modal.js"></script>
+
+</body>
 
 </html>

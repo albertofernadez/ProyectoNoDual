@@ -7,29 +7,31 @@
   <link rel="stylesheet" href="css/perdidas.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
 </head>
 
 <body>
   <div class="container">
     <ul>
       <li>
-          <a href="index.html">Noticias</a>
+        <a href="index.html">Noticias</a>
       </li>
       <li>
-          <a href="aboutus.html">Sobre Nosotros</a>
+        <a href="aboutus.html">Sobre Nosotros</a>
       </li>
       <li> <a href="adoptar.html">Adoptar</a>
       </li>
       <li>
-          <a href="perdidas1.html">Mascotas Perdidas</a>
+        <a href="perdidas1.html">Mascotas Perdidas</a>
       </li>
       <li>
-          <a href="dar.html">Dar En Adopción</a>
+        <a href="dar.html">Dar En Adopción</a>
       </li>
       <li style="float:right">
-          <a href="login.html">Iniciar Sesión</a>
+        <a href="login.html">Iniciar Sesión</a>
       </li>
-  </ul>
+    </ul>
 
     <h1>Mascotas perdidas</h1>
     <input type="radio" name="dot" id="one">
@@ -46,7 +48,30 @@
               <div class="animal">Dóberman</div>
             </div>
             <div class="media-icons">
-              <a>Ficha técnica</a>
+              <a id="open">Ficha técnica</a>
+            </div>
+
+            <div id="modal_container" class="modal-container">
+              <div class="modal">
+                <h2>Datos de la mascota</h2>
+                <img src="/img/adoptar1.png" alt="" width="200" height="150">
+                <br>
+                <table style="width:100%">
+                  <tr>
+                    <th>Nombre</th>
+                    <th>Raza</th>
+                    <th>Chip</th>
+                  </tr>
+                  <tr>
+                    <td>Laila</td>
+                    <td>Pastor Alemán</td>
+                    <td>Si</td>
+                  </tr>
+
+                </table>
+                <br>
+                <button id="close">Cerrar</button>
+              </div>
             </div>
           </div>
         </div>
