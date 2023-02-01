@@ -1,20 +1,7 @@
-section#hero div.fondo video {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  -o-object-position: center center;
-  object-position: center center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
-@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@300&display=swap");
 
-body,
-p,
-a,
-button {
-  font-family: "Quicksand", sans-serif;
-}
+
 
 button {
   background-color: #2a9b46;
@@ -105,6 +92,8 @@ img {
 * {
   box-sizing: border-box;
   margin-top: 0;
+  font-family: 'Poppins', sans-serif;
+
 }
 
 section#sobrenosotros {
